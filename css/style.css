@@ -272,7 +272,7 @@ section .header {
 }
 
 .articles .card h4 {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
   color: #fff;
   font-size: 1.25rem;
   font-weight: 600;
@@ -384,6 +384,9 @@ footer {
   grid-template-columns: 400px repeat(2, 1fr);
   gap: 2rem;
 }
+footer.container {
+  padding-top: 10rem;
+}
 
 footer .column .logo {
   max-width: 100px;
@@ -454,7 +457,7 @@ footer .column > a:hover {
   padding: 10px;
 }
 
-.blog-content h1 {
+.blog-content h1, .blog-header h1 {
   color: #fff;
   font-size: 3rem;
   font-weight: 700;
@@ -465,7 +468,7 @@ footer .column > a:hover {
   margin: 5rem auto;
 }
 
-.blog-content .content {
+.blog-content .content, .content p {
   color: #ccc;
   font-size: 1.25rem;
   line-height: 2rem;
