@@ -12,7 +12,7 @@ async function getPosts() {
             <img src="${posts[i]._embedded["wp:featuredmedia"][0].source_url}" alt="${posts[i]._embedded["wp:featuredmedia"][0].alt_text}">
             <p>${posts[i].excerpt.rendered}</p>
             <button class="btn">
-            <a href="post.html?id=${posts[i].id}">Read more</a>
+            <a href="posts.html?id=${posts[i].id}">Read more</a>
             </button>
             </div>`;
         }
