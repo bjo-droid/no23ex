@@ -12,7 +12,7 @@ if(name.length < 5){
     error_message.innerHTML = text;
     return false;
 }
-if(subject.length < 10){
+if(subject.length < 15){
     text = "Please Enter Correct Subject";
     error_message.innerHTML = text;
     return false;
@@ -27,8 +27,8 @@ if(email.indexOf("@") == -1 || email.length < 6){
     error_message.innerHTML = text;
     return false;
 }
-if(message.length <= 50){
-    text = "Please Enter More Than 50 Characters";
+if(message.length <= 25){
+    text = "Please Enter More Than 25 Characters";
     error_message.innerHTML = text;
     return false;
 }

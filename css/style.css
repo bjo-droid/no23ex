@@ -19,9 +19,7 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #18181b;
-}
-
+  background-image: linear-gradient(to right top, #18181b, #1c1d23, #21212c, #252634, #2a2b3d); }
 nav {
   max-width: 1200px;
   margin: auto;
@@ -46,7 +44,7 @@ nav {
 .link a {
   position: relative;
   padding-bottom: 0.75rem;
-  color: #fff;
+  color: #F8F8FF;
 }
 
 .link a::after {
@@ -56,7 +54,7 @@ nav {
   width: 0;
   bottom: 0;
   left: 0;
-  background-color: #1d4ed8;
+  background-color: #7389F4;
   transition: all 0.3s ease;
 }
 
@@ -67,27 +65,21 @@ nav {
 .btn {
   padding: 1rem 2rem;
   font-size: 1rem;
-  color: #fff;
-  background-color: #1d4ed8;
+  color: #F8F8FF;
+  background-color: #7389F4;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #1e40af;
+  background-color: #7389F4;
 }
 
 .container {
   max-width: 1200px;
   margin: auto;
   padding: 5rem 2rem;
-}
-
-.blur {
-  position: absolute;
-  box-shadow: 0 0 1000px 50px #1d4ed8;
-  z-index: -100;
 }
 
 header {
@@ -99,15 +91,15 @@ header {
   gap: 2rem;
 }
 
-header content h4 {
+header .content h4 {
   margin-bottom: 1rem;
-  color: #fff;
+  color: #7389F4;
   font-size: 1rem;
   font-weight: 600;
 }
 
 header .content h1 {
-  color: #fff;
+  color: #F8F8FF;
   margin-bottom: 1rem;
   font-size: 3rem;
   font-weight: 700;
@@ -116,7 +108,7 @@ header .content h1 {
 
 header .content h1 span {
   -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: 1px #fff;
+  -webkit-text-stroke: 1px #F8F8FF;
 }
 
 header .content p {
@@ -129,6 +121,10 @@ header .content p {
   max-width: 1000px;
   position: relative;
   margin: auto;
+}
+
+.slides img {
+  border-radius: 15px;
 }
 
 /* Hide the images by default */
@@ -213,7 +209,7 @@ header .image::before {
   font-size: 38rem;
   font-weight: 400;
   line-height: 20rem;
-  color: #1d4ed8;
+  color: #7389F4;
   opacity: 0.2;
   z-index: -100;
 }
@@ -225,7 +221,7 @@ header .image img {
 
 section .header {
   margin-bottom: 1rem;
-  color: #fff;
+  color: #F8F8FF;
   text-align: center;
   font-size: 2.25rem;
   font-weight: 600;
@@ -240,13 +236,13 @@ section .header {
 }
 
 .articles .card {
-  background-color: #27272a;
+  background-color: #2A2B3D;
   padding: 2rem;
   border: 1px solid transparent;
   border-radius: 15px;
   transition: all 0.3s ease;
   position: relative;
-  min-height: 35rem;
+  min-height: 50rem;
 }
 
 .articles img {
@@ -257,126 +253,64 @@ section .header {
 }
 
 .articles .card:hover {
-  background-color: #323232;
-  border-color: #fff;
+  background-color: #2A2B3D;
+  border-color: #F8F8FF;
 }
 
 .articles .card span {
   display: inline-block;
-  background-color: #1e40af;
+  background-color: #7389F4;
   padding: 2px 9px;
   margin-bottom: 1rem;
   font-size: 1.75rem;
-  color: #fff;
+  color: #F8F8FF;
   border-radius: 5px;
 }
 
 .articles .card h4 {
   margin-bottom: 1rem;
-  color: #fff;
+  color: #F8F8FF;
   font-size: 1.25rem;
   font-weight: 600;
 }
 
 .articles .card p {
-  color: #fff;
+  color: #F8F8FF;
   transition: all 0.3s ease;
 }
 
 .articles .btn {
   position: absolute;
-  bottom: 5%;
+  bottom: 7%;
   right: 20%;
   left: 20%;
-  color: #fff;
+  color: #F8F8FF;
   background-color: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #F8F8FF;
 }
 
 .articles .btn:hover {
-  background-color: #1e40af;
-  border-color: #1e40af;
+  background-color: #7389F4;
+  border-color: #7389F4;
 }
 
 .articles .card a {
-  color: #fff;
+  color: #F8F8FF;
   transition: all 0.3s ease;
 }
 
 .articles .card a:hover {
-  color: #fff;
+  color: #F8F8FF;
 }
 
 .sub-header {
   max-width: 600px;
   margin: auto;
   text-align: center;
-  color: #fff;
+  color: #F8F8FF;
 }
 
-.pricing {
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
 
-.pricing .card {
-  padding: 3rem 2rem;
-  background-color: #27272a;
-  display: flex;
-  flex-direction: column;
-  border-radius: 15px;
-  transition: all 0.3s ease;
-}
-
-.pricing .card:hover {
-  background-color: #323232;
-  color: #fff;
-}
-
-.pricing .card .content {
-  flex: 1;
-  margin-bottom: 2rem;
-}
-
-.pricing .card h4 {
-  margin-bottom: 1rem;
-  color: #fff;
-  font-size: 1.2rem;
-  font-weight: 500;
-}
-
-.pricing .card h3 {
-  color: #fff;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-  font-weight: 600;
-  border-bottom: 2px dashed #fff;
-}
-
-.pricing .card p {
-  color: #fff;
-  margin-bottom: 0.75rem;
-}
-
-.pricing .card p i {
-  color: #ccc;
-  font-size: 1.2rem;
-  margin-right: 0.3rem;
-}
-
-.pricing .card button {
-  color: #fff;
-  background-color: transparent;
-  border: 2px solid #fff;
-}
-
-.pricing .card button:hover {
-  background-color: #1e40af;
-  border-color: #1e40af;
-}
 
 footer {
   position: relative;
@@ -414,13 +348,13 @@ footer .socials a {
 }
 
 footer .socials a:hover {
-  color: #fff;
-  background-color: #1d4ed8;
-  border-color: #1d4ed8;
+  color: #F8F8FF;
+  background-color: #7389F4;
+  border-color: #7389F4;
 }
 
 footer .column h4 {
-  color: #fff;
+  color: #F8F8FF;
   margin-bottom: 2rem;
   font-size: 1.2rem;
   font-weight: 500;
@@ -434,14 +368,14 @@ footer .column > a {
 }
 
 footer .column > a:hover {
-  color: #1d4ed8;
+  color: #7389F4;
 }
 
 .copyright {
   max-width: 1200px;
   margin: auto;
   padding: 1rem;
-  color: #fff;
+  color: #F8F8FF;
   font-size: 0.8rem;
   text-align: center;
 }
@@ -459,7 +393,7 @@ footer .column > a:hover {
 
 .blog-content h1,
 .blog-header h1 {
-  color: #fff;
+  color: #F8F8FF;
   font-size: 3rem;
   font-weight: 700;
   line-height: 4rem;
@@ -565,7 +499,7 @@ footer .column > a:hover {
 .contact-container {
   max-width: 520px;
   width: 100%;
-  background-color: #27272a;
+  background-color: #2A2B3D;
   padding: 25px;
   border-radius: 15px;
   margin: auto;
@@ -578,7 +512,7 @@ footer .column > a:hover {
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #1d4ed8;
+  color: #7389F4;
 }
 
 .contact-container .input-field {
@@ -588,7 +522,7 @@ footer .column > a:hover {
 .contact-container .input-field input[type="text"],
 .contact-container textarea {
   width: 100%;
-  border: 1px solid #1d4ed8;
+  border: 1px solid #7389F4;
   padding: 10px;
 }
 
@@ -602,7 +536,7 @@ footer .column > a:hover {
   padding: 10px;
   width: 100%;
   background-color: transparent;
-  color: #fff;
+  color: #F8F8FF;
   text-transform: uppercase;
   font-size: 1rem;
   font-weight: 700;
@@ -613,7 +547,7 @@ footer .column > a:hover {
 .contact-container #error_message {
   margin-bottom: 20px;
   padding: 0;
-  background-color: #1e40af;
+  background-color: #7389F4;
   text-align: center;
   font-size: 14px;
   transition: all 0.5s ease;
@@ -622,13 +556,13 @@ footer .column > a:hover {
 .btn {
   padding: 1rem 2rem;
   font-size: 1rem;
-  color: #fff;
-  background-color: #1d4ed8;
+  color: #F8F8FF;
+  background-color: #7389F4;
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #1e40af;
+  background-color: #7389F4;
 }
