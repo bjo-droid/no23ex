@@ -9,12 +9,21 @@ async function getPost() {
     const post = await response.json();
     console.log(post);
     document.title = "Bjotech | " + post.title.rendered;
-    document.querySelector(".blog-header h1").innerHTML = post.title.rendered;
-    document.querySelector(".blog-image img").src =
-      post._embedded["wp:featuredmedia"][0].source_url;
-    document.querySelector(".blog-image img").alt =
-      post._embedded["wp:featuredmedia"][0].alt_text;
-    document.querySelector(".content p").innerHTML = post.content.rendered;
+    container.innerHTML += `<div class="blog-content">
+        <h1>${post.title.rendered}</h1>
+        <div class="blog-image">
+        <img id="blogImage" src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="${post._embedded["wp:featuredmedia"][0].alt_text}">
+        <div id="img-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="pop-out">
+        <div id="caption"></div>
+        </div>
+        </div>
+        <div class="content">
+        ${post.content.rendered}
+        </div>
+        </div>`;
+    document.querySelector("h1").innerHTML = post.title.rendered;
   } catch (error) {
     console.log(error);
   }
@@ -23,10 +32,10 @@ async function getPost() {
 getPost();
 
 // Get the modal
-var modal = document.getElementById("img-modal");
+var modal = document.getElementById("blog-image");
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("blogImage");
+var img = post._embedded["wp:featuredmedia"][0].source_url;
 var modalImg = document.getElementById("pop-out");
 var captionText = document.getElementById("caption");
 img.onclick = function () {
