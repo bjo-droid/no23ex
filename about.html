@@ -15,50 +15,53 @@
     <nav>
       <div class="nav-logo">
         <a href="index.html">
-          <img src="./img/logov1.png" alt="" />
+          <img src="./img/robot_logo.png" alt="" />
         </a>
       </div>
-      <ul class="nav-links">
+      <ul id="hamburger-links" class="nav-links">
         <li class="link"><a href="index.html">Home</a></li>
-        <li class="link"><a href="#">About</a></li>
-        <li class="link"><a href="#">Tech</a></li>
-        <li class="link"><a href="#">Gaming</a></li>
+        <li class="link"><a href="about.html">About</a></li>
+        <li class="link"><a href="tech.html">Tech</a></li>
+        <li class="link"><a href="gaming.html">Gaming</a></li>
       </ul>
       <ul class="nav-links">
         <li class="link">
           <a href="contact.html">Contact</a>
         </li>
       </ul>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="ri-menu-line"></i>
+      </a>
     </nav>
     <main>
       <div class="blog-container">
         <div class="blog-header">
           <h1>About us</h1>
+          <br />
         </div>
+        <img src="./img/gottado.jpg" alt="" />
+
         <div class="content">
+          <br />
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit sit
-            quisquam ipsa nisi aut corporis, neque consectetur quae tenetur
-            expedita et eum obcaecati excepturi laudantium. Nobis, earum alias
-            libero ipsa quaerat iusto iste voluptas quibusdam eos, praesentium
-            exercitationem asperiores dicta in, dolor rerum vitae suscipit error
-            impedit? Distinctio, est omnis?
+            This "Blog" was created by Bjarte Ohnstad for his 1st year exam in
+            Frontend Development at Noroff School of Technology and Digital
+            Media. Most of the content in the blog posts are random and not to
+            be taken seriously as it purely for educational purposes.
           </p>
         </div>
       </div>
     </main>
     <footer class="container">
-      <span class="blur"></span>
-      <span class="blur"></span>
       <div class="column">
         <div class="logo">
-          <img src="img/logov1.png" />
+          <img src="img/robot_logo.png" />
         </div>
       </div>
       <div class="column">
         <h4>Menu</h4>
         <a href="#">Back up</a>
-        <a href="#article">Articles</a>
+        <a href="index.html">Articles</a>
         <a href="contact.html">Contact Form</a>
       </div>
       <div class="socials">
@@ -68,6 +71,6 @@
       </div>
     </footer>
     <div class="copyright">Copyright © 2023</div>
-    <script src=""></script>
+    <script src="./js/hamburger.js"></script>
   </body>
 </html>
