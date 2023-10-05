@@ -18,9 +18,11 @@ You can add some bullet points if you'd like to:
 
 You can list a the tech stack that you've used over here
 
-- [React.js](https://reactjs.org/)
-- [Bootstrap](https://getbootstrap.com)
-
+- [HTML](https://en.wikipedia.org/wiki/HTML)
+- [CSS](https://en.wikipedia.org/wiki/CSS)
+- [JavaScript](https://www.javascript.com/)
+- [Wordpress](https://wordpress.com/)
+  
 ## Getting Started
 
 ### Installing
