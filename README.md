@@ -1,6 +1,6 @@
 # Noroff 2023 Exam Project
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://github.com/bjo-droid/no23ex/blob/main/img/nor_exam_23.png)
 
 An blog about tech, video games and movies. This is an projected created for my First year exam in Frontend Web Development.
 
