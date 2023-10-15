@@ -6,13 +6,7 @@ An blog about tech, video games and movies. This is an projected created for my 
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
-
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+This projected is created with HTML, CSS and Javascript, it also utilize headless Wordpress API as an conent manager. 
 
 ## Built With
 
@@ -50,10 +44,6 @@ To run the app, run the following commands:
 ```bash
 npm run start
 ```
-
-## Contributing
-
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
 
 ## Contact
 
